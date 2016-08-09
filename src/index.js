@@ -179,7 +179,7 @@ class JsonApi {
         method: 'DELETE',
         url: this.urlFor(),
         model: lastRequest.get('model').value(),
-        data: {}
+        data: arguments[0] || {}
       }
 
       if (this.resetBuilderOnCall) {
